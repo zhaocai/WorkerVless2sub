@@ -25,11 +25,11 @@ jobs:
       id: sync
       uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
       with:
-        target_sync_branch: master
+        target_sync_branch: main
         # REQUIRED 'target_repo_token' exactly like this!
         target_repo_token: ${{ secrets.GITHUB_TOKEN }}
-        upstream_sync_branch: master
-        upstream_sync_repo: clearlydefined/curated-data
+        upstream_sync_branch: main
+        upstream_sync_repo: cmliu/WorkerVless2sub
       
     # Step 3: Display a sample message based on the sync output var 'has_new_commits'
     - name: New commits found
